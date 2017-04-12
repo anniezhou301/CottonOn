@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="loginApp">
+  <head>
+    <title>Cotton On - Streamline Your Morning</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../public/style.css">
+  </head>
+  <body>
+    <div class="container" ng-controller="loginCtrl">
+      <nav>
+        <div class="navWide">
+          <div class="brand"><strong>Cotton</strong>On</div>
+          <div class="wideDiv"><a class="active" href="login.html">Login</a><a href="index.html">Input</a><a href="home.html">Home</a></div>
+        </div>
+      </nav>
+      <main ui-view=""></main>
+    </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="../routes/controller.js"></script>
+    <script src="../routes/index.js"></script>
+  </body>
+</html>

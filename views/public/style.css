@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{
+  text-align: center;
+  font-family: 'Open Sans', Helvetica;
+  margin: 0;
+}
+td{
+  text-align: left;
+  width:300px;
+}
+
+.line{
+  border-right: 2px solid #c1c1c1;
+}
+
+.weekday{
+  font-size:20px;
+  color: #333;
+
+  display: inline-block;
+}
+
+.brand{
+  float:left;
+  margin-left: 20px;
+  margin-top: -30px;
+  display: inline-block;
+color: #6b81ff;
+  font-size:70px;
+  font-family: Open Sans;
+}
+.clothes{
+  display: block;
+  padding: 2px 10px 2px 10px;
+  font-size: 12px;
+}
+
+.description{
+
+  position: absolute;
+  text-align: center;
+  bottom: 0px;
+}
+
+.tempDesc{
+  font-size: 10px;
+  margin-top: 10px;
+  margin-left:10px;
+  display: block;
+  text-align: left;
+  padding: 5px;
+}
+
+.icon {
+  display: inline-block;
+  
+}
+
+.icon img{
+
+  margin: 0px 0px -13px 20px;
+  width:40px;
+  height: auto;
+}
+.high{
+  background-color: #666666;
+  color: white;
+}
+
+.low{
+  background-color: #333333;
+  color: white;
+}
+
+.high, .low{
+  display: inline-block;
+  padding: 3px 8px 3px 8px; 
+  margin: 15px 0px 15px 0px;
+}
+
+/*  SECTIONS  */
+.section {
+  clear: both;
+  padding: 0px;
+  margin:0 1.5% 0 1.5%;
+  
+}
+
+/*  COLUMN SETUP  */
+.col {
+  display: block;
+  float:left;
+  padding: 0 .5% 0 .5%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF SEVEN  */
+.span_7_of_7 {
+  width: 100%;
+}
+
+.span_6_of_7 {
+    width: 85.48%;
+}
+
+.span_5_of_7 {
+    width: 70.97%;
+}
+
+.span_4_of_7 {
+    width: 56.45%;
+}
+
+.span_3_of_7 {
+    width: 41.94%;
+}
+
+.span_2_of_7 {
+    width: 27.42%;
+}
+
+.span_1_of_7 {
+    width: 12.91%;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .col {  margin: 1% 0 1% 0%; }
+  .span_1_of_7, .span_2_of_7, .span_3_of_7, .span_4_of_7, .span_5_of_7, .span_6_of_7, .span_7_of_7 { width: 100%; }
+  .line{
+  border-right: none;
+}
+}
+
+nav {
+  overflow: hidden;
+  padding: .7em;
+}
+
+nav a {
+    color: #000;
+    float: right;
+}
+
+nav a:visited {
+    color: #666;
+}
+
+nav .navWide {
+  display: none;
+}
+
+nav .navWide .wideDiv {
+  text-align: center;
+  margin-top:30px;
+}
+
+nav .navWide .wideDiv a {
+  text-decoration: none;
+  display: inline-block;
+  /*Adjust padding to increase/decrease the space between links.*/
+  padding: .2em 2em 0 2em;
+}
+  
+/*Navbar is set to default with the "hamburger" and links on the left
+side of the screen. To move to the right of the screen, simply
+change the three "float: Left;" references to read "float: right;".*/
+
+
+.hidden {
+  display: none;
+}
+
+/*Adjust breakpoint as desired to select when the "hamburger" menu is
+replaced by just the links.*/
+@media (min-width: 480px) {
+  
+  nav .navWide {
+    display: block;
+  }
+
+}

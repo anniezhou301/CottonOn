@@ -1,0 +1,29 @@
+doctype html
+html(ng-app='myApp')
+  head
+    title Cotton On - Streamline Your Morning
+    link(href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css', rel='stylesheet')
+    link(rel='stylesheet', href='../public/style.css')
+  body
+    .container(ng-controller='appCtrl')
+      nav
+        .navWide
+          .brand
+            strong Cotton
+            | On
+          .wideDiv
+            a(href='login.html') Login
+            a.active(href='index.html') Input
+            a(href='home.html') Home
+      table.table
+        thead
+          tr
+            td.day
+            td
+            td
+        tbody
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js')
+    script(src='../routes/controller.js')
+    script(src='../routes/index.js')
